@@ -1,8 +1,15 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import platform
+from os import getcwd
 from selenium.common.exceptions import NoSuchElementException
 
-browser = webdriver.PhantomJS(executable_path="/Users/jiya/PycharmProjects/DataScraping/phantomjs")
+
+if (platform.system() == 'Windows'):
+    browser = webdriver.PhantomJS(executable_path=getcwd() + "\phantomjs")
+if (platform.system() == 'Darwin'):
+    browser = webdriver.PhantomJS(executable_path=getcwd() + "/phantomjs")
+
 
 URL = input("Please enter the URL: ")
 browser.get(URL)
