@@ -2,6 +2,19 @@
 This was built using ***BeautifulSoup, Selenium, PhantomJS***  
 
 ---
+**Instructions:**
+
+- Download <a href="https://phantomjs.org/download.html">PhantomJS</a> 
+- Add it in the same directory where main.py is located 
+- Run
+
+---
+**Features:**
+
+- Works on both Windows and MacOS
+- Only accepts URLs from instructables.com
+
+---
 **Attributes extracted from the URL:**
 - Scraped URL
 - Header Title
