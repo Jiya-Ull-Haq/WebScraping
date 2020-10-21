@@ -1,4 +1,4 @@
-## WebScraping Assignment
+## Instructables.com WebScraping
 This was built using ***BeautifulSoup, Selenium, PhantomJS***  
 
 ---
