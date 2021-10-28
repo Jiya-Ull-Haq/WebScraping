@@ -7,7 +7,7 @@ import re
 
 if (platform.system() == 'Windows'):
     browser = webdriver.PhantomJS(executable_path=getcwd() + "\phantomjs")
-if (platform.system() == 'Darwin'):
+if (platform.system() == 'Darwin' or platform.system() == 'Linux' ):
     browser = webdriver.PhantomJS(executable_path=getcwd() + "/phantomjs")
 
 
