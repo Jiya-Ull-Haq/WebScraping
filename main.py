@@ -15,6 +15,8 @@ URL = input("Please enter the URL: ")
 x = re.search("^https://www.instructables.com", URL)
 
 # -----------------------------
+def throw_error():
+    print("Only takes URLs from instructables.com")
 def scrape():
     if x:
         browser.get(URL)
@@ -80,6 +82,6 @@ def scrape():
 
         browser.close()
     else:
-        print("Only takes URLs from instructables.com")
+        throw_error()
         exit()
 scrape()
